@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AirPulse - NASA Weather Insights</title>
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/869/869869.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background">
+    <div class="sun"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+  </div>
+
+  <div class="content">
+    <div class="logo">
+      <i class="fa-solid fa-cloud-sun"></i>
+      <h1>AirPulse</h1>
+    </div>
+    <p>Check weather comfort using real NASA Earth observation data 🌍</p>
+
+    <div class="input-container">
+      <div class="input-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="number" id="lat" placeholder="Latitude (e.g. 30.0)">
+      </div>
+      <div class="input-box">
+        <i class="fa-solid fa-earth-africa"></i>
+        <input type="number" id="lon" placeholder="Longitude (e.g. 31.2)">
+      </div>
+      <div class="input-box">
+        <i class="fa-solid fa-calendar-day"></i>
+        <input type="date" id="date">
+      </div>
+      <button onclick="getWeather()">
+        <i class="fa-solid fa-magnifying-glass"></i> Check Weather
+      </button>
+    </div>
+
+    <div id="result" class="card" style="display:none;"></div>
+  </div>
+
+  <footer>
+    <p>🌤️ <b>AirPulse</b> © 2025 — Built for 
+      <a href="https://www.spaceappschallenge.org/" target="_blank">NASA Space Apps Challenge</a>
+    </p>
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
